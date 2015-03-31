@@ -6,6 +6,7 @@ Beamer Theme that I created for presentations using the color schemes of Louisia
 
  * v1.0: Initial version defines a color scheme using LSU's purple and gold colors for any beamer theme
  * v1.1: Created two themes that use the color scheme from v1.0
+ * v1.2: Modify outer theme due to change in icon sizes
 
 ## Disclaimer
 
