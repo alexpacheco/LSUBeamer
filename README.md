@@ -2,6 +2,11 @@
 
 Beamer Theme that I created for presentations using the color schemes of Louisiana State University.
 
+## Changelog
+
+ * v1.0: Initial version defines a color scheme using LSU's purple and gold colors for any beamer theme
+ * v1.1: Created two themes that use the color scheme from v1.0
+
 ## Disclaimer
 
 The following style files were created for personal use and are not endorsed by Louisiana State University, High Performance Computing @LSU or Center for Computation & Technology. Feel free to use or modify them for personal use.

@@ -1,0 +1,271 @@
+% Style file for LSU outer theme
+% Modified by Alex Pacheco, High Performance Computing, Louisiana State University.
+%  wget http://www.cct.lsu.edu/~apacheco/tutorials/TeX/beamerouterthemetigers.sty
+% Required by beamerthemeLSU.sty
+%  wget http://www.cct.lsu.edu/~apacheco/tutorials/TeX/beamerthemeLSU.sty
+%  Dated: Oct 18 2011
+%  Email <apacheco_at_cct.lsu.edu> for comments or modifications.
+%  This theme places four logos, two each at the top and bottom:
+%	Main logo at the right (for University Logo) and a sublogo at the left (for Institute Logo)
+%	Also places the short institute and frame numbers between the two logos.
+% Below is the original copyright and license information:
+% --------------------------------------------------------------------------------------------
+% Copyright 2007 by Till Tantau
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+% --------------------------------------------------------------------------------------------
+
+\ProvidesPackageRCS $Header: /usr/local/texlive/2010/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemetigers.sty,v d02a7cf4d8ae 2010/06/17 09:11:41 rivanvx $
+
+
+\mode<presentation>
+
+
+% Mini frames
+
+% Navigation symbols
+
+\defbeamertemplate*{navigation symbols}{tigers}
+{%
+  \hbox{%
+    \hbox{\insertslidenavigationsymbol}
+    \hbox{\insertframenavigationsymbol}
+    \hbox{\insertsubsectionnavigationsymbol}
+    \hbox{\insertsectionnavigationsymbol}
+    \hbox{\insertdocnavigationsymbol}
+    \hbox{\insertbackfindforwardnavigationsymbol}%
+  }%
+}
+
+% No navigation symbols in handout or trans mode:
+\only<handout| trans>{\setbeamertemplate{navigation symbols}{}}
+
+
+
+% Section and subsections in head/foot
+
+\defbeamertemplate*{section in head/foot}{tigers}
+{\insertsectionhead}
+
+\defbeamertemplate*{section in head/foot shaded}{tigers}[1][50]
+{\color{fg!#1!bg}\usebeamertemplate{section in head/foot}}
+
+\defbeamertemplate*{subsection in head/foot}{tigers}
+{\insertsubsectionhead}
+
+\defbeamertemplate*{subsection in head/foot shaded}{tigers}[1][50]
+{\color{fg!#1!bg}\usebeamertemplate{subsection in head/foot}}
+
+\defbeamertemplate*{subsubsection in head/foot}{tigers}
+{\insertsubsubsectionhead}
+
+\defbeamertemplate*{subsubsection in head/foot shaded}{tigers}[1][50]
+{\color{fg!#1!bg}\usebeamertemplate{subsubsection in head/foot}}
+
+
+% Logo at top left
+\def\tllogo{\setbeamertemplate{tllogo}}
+\def\inserttllogo{\usebeamertemplate*{tllogo}}
+% Logo at top right
+\def\trlogo{\setbeamertemplate{trlogo}}
+\def\inserttrlogo{\usebeamertemplate*{trlogo}}
+% Logo at bottom right
+\def\brlogo{\setbeamertemplate{brlogo}}
+\def\insertbrlogo{\usebeamertemplate*{brlogo}}
+
+
+% Headline and footline
+\providecommand\insertframetitle{} 
+\defbeamertemplate*{headline}{tigers}
+{
+  \vfill
+  \hbox{
+  \begin{tabular}[b]{c}
+    \begin{minipage}{\paperwidth}
+      {%\hspace{0.7cm}
+      \begin{minipage}{0.96\paperwidth}
+	{
+	\begin{minipage}{0.1\paperwidth}
+	  \inserttllogo%\hfill
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.6\paperwidth}
+ 	  \vbox{%
+ 	  \centering{\color{tigerspurple}\textbf{\insertframetitle}}%
+ 	  }
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.15\paperwidth}
+	  \hfill\inserttrlogo
+	\end{minipage}
+	}
+      \end{minipage}
+      }
+    \end{minipage}
+    \\\hline
+  \end{tabular}
+  }
+}
+
+\defbeamertemplate*{footline}{tigers}
+{
+  \vfill
+  \hbox{
+  \begin{tabular}[b]{c}
+    \begin{minipage}{\paperwidth}
+      {\hspace{0.7cm}
+      \begin{minipage}{\paperwidth}
+	\vbox{%
+	\tinycolouredline{structure}%
+	{\color{tigersgold}\textbf{\inserttitle\hfill\insertshortdate}}%
+	}
+      \end{minipage}
+      \begin{minipage}{0.96\paperwidth}
+	{
+	\begin{minipage}{0.15\paperwidth}
+	  \insertlogo\hfill
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.6\paperwidth}
+	  \centering{\color{tigerspurple}\textbf{\insertshortinstitute\hfill\insertframenumber{} / \inserttotalframenumber\hfill}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.15\paperwidth}
+	  \hfill\insertbrlogo
+	\end{minipage}
+	}
+      \end{minipage}
+      }
+    \end{minipage}
+  \end{tabular}
+  }
+}
+
+
+% background
+
+\defbeamertemplate*{background}{tigers}
+{}
+
+\defbeamertemplate*{background canvas}{tigers}
+{%
+  \ifbeamercolorempty[bg]{background canvas}{}{\color{bg}\vrule width\paperwidth height\paperheight}%
+}
+
+
+% Sidebar
+
+\defbeamertemplate*{sidebar left}{tigers}
+{
+%   \vfill%
+%   \rlap{\insertsublogo\hskip0.1cm}%
+%   \vskip2pt%
+}
+
+\defbeamertemplate*{sidebar right}{tigers}
+{
+%   \vfill%
+%   \llap{\insertlogo\hskip0.1cm}%
+%   \vskip2pt%
+}
+
+\defbeamertemplate*{sidebar canvas left}{tigers}
+{%
+  \ifbeamercolorempty[bg]{sidebar left}{}
+  {\color{bg}\vrule height\sidebarheight width\beamer@leftsidebar}%
+}
+
+\defbeamertemplate*{sidebar canvas right}{tigers}
+{%
+  \ifbeamercolorempty[bg]{sidebar right}{}
+  {\color{bg}\vrule height\sidebarheight width\beamer@rightsidebar}%
+}
+
+
+
+% Frame title: tigers
+
+\defbeamertemplate*{frametitle}{tigers}[1][center]
+{
+%   \ifbeamercolorempty[bg]{frametitle}{}{\nointerlineskip}%
+%   \@tempdima=\textwidth%
+%   \advance\@tempdima by\beamer@leftmargin%
+%   \advance\@tempdima by\beamer@rightmargin%
+%   \begin{beamercolorbox}[sep=0.15cm,#1,wd=\the\@tempdima]{frametitle}
+%     \usebeamerfont{frametitle}%
+%     \vbox{}\vskip-1ex%
+%     \if@tempswa\else\csname beamer@fte#1\endcsname\fi%
+%     \strut\insertframetitle\strut\par%
+%     {%
+%       \ifx\insertframesubtitle\@empty%
+%       \else%
+%       {\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle\strut\par}%
+%       \fi
+%     }%
+%     \vskip-1ex%
+%     \if@tempswa\else\vskip-.3cm\fi% set inside beamercolorbox... evil here...
+%   \end{beamercolorbox}%
+}
+
+\def\beamer@fteright{\vskip0.35cm\advance\leftskip by 1.7cm\advance\rightskip by1.7cm}
+
+
+% Frame title continuations, tigers
+
+\defbeamertemplate*{frametitle continuation}{tigers}{\insertcontinuationcountroman}
+
+
+
+% Notes
+
+\defbeamertemplate*{note page}{tigers}
+{%
+  {%
+    \scriptsize
+    \insertvrule{.25\paperheight}{white!90!black}
+    \vskip-.25\paperheight
+    \nointerlineskip
+    \vbox{
+      \hfill\insertslideintonotes{0.25}\hskip-\Gm@rmargin\hskip0pt%
+      \vskip-0.25\paperheight%
+      \nointerlineskip
+      \begin{pgfpicture}{0cm}{0cm}{0cm}{0cm}
+        \begin{pgflowlevelscope}{\pgftransformrotate{90}}
+          {\pgftransformshift{\pgfpoint{-2cm}{0.2cm}}%
+          \pgftext[base,left]{\footnotesize\the\year-\ifnum\month<10\relax0\fi\the\month-\ifnum\day<10\relax0\fi\the\day}}
+        \end{pgflowlevelscope}
+      \end{pgfpicture}}
+    \nointerlineskip
+    \vbox to .25\paperheight{\vskip0.5em
+      \hbox{\insertshorttitle[width=8cm]}%
+      \setbox\beamer@tempbox=\hbox{\insertsection}%
+      \hbox{\ifdim\wd\beamer@tempbox>1pt{\hskip4pt\raise3pt\hbox{\vrule
+            width0.4pt height7pt\vrule width 9pt
+            height0.4pt}}\hskip1pt\hbox{\begin{minipage}[t]{7.5cm}\def\breakhere{}\insertsection\end{minipage}}\fi%
+      }%
+      \setbox\beamer@tempbox=\hbox{\insertsubsection}%
+      \hbox{\ifdim\wd\beamer@tempbox>1pt{\hskip17.4pt\raise3pt\hbox{\vrule
+            width0.4pt height7pt\vrule width 9pt
+            height0.4pt}}\hskip1pt\hbox{\begin{minipage}[t]{7.5cm}\def\breakhere{}\insertsubsection\end{minipage}}\fi%
+      }%
+      \setbox\beamer@tempbox=\hbox{\insertshortframetitle}%
+      \hbox{\ifdim\wd\beamer@tempbox>1pt{\hskip30.8pt\raise3pt\hbox{\vrule
+            width0.4pt height7pt\vrule width 9pt
+            height0.4pt}}\hskip1pt\hbox{\insertshortframetitle[width=7cm]}\fi%
+      }%
+      \vfil}%
+  }%
+  \vskip.25em
+  \nointerlineskip
+  \insertnote
+}
+
+
+
+\mode
+<all>

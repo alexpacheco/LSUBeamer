@@ -1,18 +1,28 @@
-\ProvidesPackageRCS $Header: /cvsroot/latex-beamer/latex-beamer/themes/color/beamercolorthemebayou.sty,v 1.8 2004/10/28 17:15:51 tantau Exp $
-
-% Copyright 2003 by Till Tantau <tantau@users.sourceforge.net>.
+% Style file for LSU color scheme: purple and gold
+% Modified by Alex Pacheco, High Performance Computing, Louisiana State University.
+%  wget http://www.cct.lsu.edu/~apacheco/tutorials/TeX/beamercolorthemetigers.sty
+%  Dated: Oct 28 2010
+%  Email <apacheco_at_cct.lsu.edu> for comments or modifications.
+% Below is the original copyright and license information:
+% -------------------------------------------------------------------------------------------
+% Copyright 2004 by Madhusudan Singh <madhusudan.singh@gmail.com>
 %
-% This program can be redistributed and/or modified under the terms
-% of the GNU Public License, version 2.
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+% --------------------------------------------------------------------------------------------
+\ProvidesPackageRCS $Header: /usr/local/texlive/2010/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemetigers.sty,v 1 2010/10/28 09:11:41 $
 
 \mode<presentation>
 
 \definecolor{tigersgold}{RGB}{253,208,35}
 \definecolor{tigerspurple}{RGB}{70,29,124}
-\definecolor{tigersheader}{RGB}{215,209,243}
 \definecolor{tigersblue}{RGB}{52,0,252}
 
-\setbeamercolor{structure}{fg=tigersheader}
+\setbeamercolor{structure}{fg=tigerspurple}
 
 \setbeamercolor{palette primary}{fg=black,bg=tigersgold}
 \setbeamercolor{palette secondary}{fg=tigersgold,bg=tigerspurple!75!black}
@@ -23,14 +33,12 @@
 
 \setbeamercolor{block title}{fg=tigersgold,bg=tigerspurple}
 \setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=alerted text.fg!75!black}
-%\setbeamercolor{block title example}{use=example text,fg=white,bg=example text.fg!75!black}
 \setbeamercolor{block title example}{fg=tigerspurple,bg=tigersgold}
 
-%\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!25!bg}
-\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.fg}
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!25!bg}
+%\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.fg}
 \setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!25!bg}
-%\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!25!bg}
-\setbeamercolor{block body example}{parent=normal text,use=block title example,fg=block title example.bg,bg=block title example.fg}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!25!bg}
 
 \setbeamercolor{sidebar}{bg=tigersgold!70}
   
