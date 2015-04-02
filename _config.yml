@@ -11,7 +11,7 @@ title:
 tagline:          'Themes for LaTeX Presentations'
 description:      ''
 url:              http://www.alexpacheco.us
-baseurl:          /LSUBeamer
+baseurl:          /LSUBeamer/
 
 author:
   name:           'Alex Pacheco'
