@@ -10,7 +10,7 @@ relative_permalinks: true
 title:            
 tagline:          'Themes for LaTeX Presentations'
 description:      ''
-url:              http://www.alexpacheco.us/LSUBeamer
+url:              http://www.alexpacheco.us
 baseurl:          /LSUBeamer
 
 author:
