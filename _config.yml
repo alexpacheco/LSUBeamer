@@ -1,0 +1,27 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            
+tagline:          'Themes for LaTeX Presentations'
+description:      ''
+#A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:              http://www.alexpacheco.us/LSUBeamer
+baseurl:          /
+
+author:
+  name:           'Alex Pacheco'
+  url:            http://www.alexpacheco.us
+
+paginate:         
+
+# Custom vars
+#version:          1.2
+
+github:
+  repo:           https://github.com/alexpacheco/LSUBeamer
