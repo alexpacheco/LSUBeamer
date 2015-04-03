@@ -7,9 +7,9 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            ''
-tagline:          'Beamer Themes for LaTeX Presentations'
-description:      ''
+title:            'LSU'
+tagline:          'LaTeX Presentations'
+description:      'Beamer Theme and Powerdot style file using LSU's purple and gold color scheme'
 url:              http://www.alexpacheco.us/LSUBeamer/
 baseurl:          
 
