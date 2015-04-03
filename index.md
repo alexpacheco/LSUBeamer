@@ -7,11 +7,24 @@ title: Home
 
 Beamer Theme that I created for presentations using the color schemes of Louisiana State University.
 
-## Changelog
+## Usage
+You can use either the LSU or Baton Rouge theme below. See the example PDF file for appearance.
+ You will need use the color style file for both the themes. The LSU theme also requires 
+the outer theme below as well as four logs for each of the four corners.  
+If you do not use all four logos, how it might affect the contents in the header or footer. 
+You can modify the outer theme if this causes a problem.
 
- * v1.0: Initial version defines a color scheme using LSU's purple and gold colors for any beamer theme
- * v1.1: Created two themes that use the color scheme from v1.0
- * v1.2: Modify outer theme due to change in icon sizes
+To use the theme, add the theme as you would any other Beamer theme
+
+```LaTeX
+\usetheme{LSU}
+
+```
+OR
+```TeX
+\usetheme{BatonRouge}
+```
+
 
 ### Download Beamer Themes
 
@@ -27,9 +40,19 @@ Beamer Theme that I created for presentations using the color schemes of Louisia
  * [LSU TeX](example/beamerthemeLSU.tex) 
  * [LSU PDF](example/beamerthemeLSU.pdf)
 
+## Changelog
+
+ * v1.0: Initial version defines a color scheme using LSU's purple and gold colors for any beamer theme
+ * v1.1: Created two themes that use the color scheme from v1.0
+ * v1.2: Modify outer theme due to change in icon sizes
+
 # LSU Powerdot
-Powerdot Theme using LSU colors created for the LaTeX presentation. (Why? because I had lot of time to 
+Powerdot Theme using LSU colors created for the LaTeX presentation. (Why? because I had some time to 
 evaluate powerdot)
+
+## Usage
+
+
  
  * [Download](powerdot-lsuloni.sty)
 
