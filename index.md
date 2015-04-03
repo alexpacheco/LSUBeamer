@@ -11,8 +11,8 @@ Beamer Theme that I created for presentations using the color schemes of Louisia
 You can use either the LSU or Baton Rouge theme below. See the example PDF file for appearance.
  You will need use the color style file for both the themes. The LSU theme also requires 
 the outer theme below as well as four logs for each of the four corners.  
-If you do not use all four logos, how it might affect the contents in the header or footer. 
-You can modify the outer theme if this causes a problem.
+If you do not use all four logos, I don't know how it might affect the contents in the 
+header or footer. You can modify the outer theme if this causes a problem.
 
 To use the theme, add the theme as you would any other Beamer theme
 
