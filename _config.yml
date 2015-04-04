@@ -1,26 +1,26 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+markdown:redcarpet
+highlighter:pygments
 
 # Permalinks
-permalink:        pretty
-relative_permalinks: true
+permalink:pretty
+relative_permalinks:true
 
 # Setup
-title:            'LSU'
-tagline:          'LaTeX Presentations'
-description:      'Beamer Theme and Powerdot style file using LSU's purple and gold color scheme'
-url:              http://www.alexpacheco.us/LSUBeamer/
-baseurl:          
+title:LSU
+tagline:LaTeX Presentations
+description:'Beamer Theme and Powerdot style file using LSU's purple and gold color scheme'
+url:http://www.alexpacheco.us/LSUBeamer/
+baseurl:
 
 author:
-  name:           'Alex Pacheco'
-  url:            http://www.alexpacheco.us
+  name:Alex Pacheco
+  url:http://www.alexpacheco.us
 
-paginate:         
+paginate:
 
 # Custom vars
-version:          
+version:
 
 github:
-  repo:           https://github.com/alexpacheco/LSUBeamer
+  repo:https://github.com/alexpacheco/LSUBeamer
