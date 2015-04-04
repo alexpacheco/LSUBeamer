@@ -16,14 +16,17 @@ header or footer. You can modify the outer theme if this causes a problem.
 
 To use the theme, add the theme as you would any other Beamer theme
 
-```LaTeX
+<pre>
+  <code class="latex">
 \usetheme{LSU}
-
-```
+  </code>
+</pre>
 OR
-```TeX
+<pre>
+  <code class="tex">
 \usetheme{BatonRouge}
-```
+  </code>
+</pre>
 
 
 ### Download Beamer Themes
