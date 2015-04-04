@@ -9,7 +9,7 @@ relative_permalinks:true
 # Setup
 title:LSU
 tagline:LaTeX Presentations
-description:'Beamer Theme and Powerdot style file using LSU's purple and gold color scheme'
+description:Beamer Theme and Powerdot style file using LSU&#39;s purple and gold color scheme
 url:http://www.alexpacheco.us/LSUBeamer/
 baseurl:
 
