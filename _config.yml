@@ -20,7 +20,7 @@ author:
 paginate:
 
 # Custom vars
-version:
+version:1.2
 
 github:
-  repo:https://github.com/alexpacheco/LSUBeamer
+repo:https://github.com/alexpacheco/LSUBeamer
