@@ -7,11 +7,27 @@ title: Home
 
 Beamer Theme that I created for presentations using the color schemes of Louisiana State University.
 
-## Changelog
+## Usage
+You can use either the LSU or Baton Rouge theme below. See the example PDF file for appearance.
+ You will need use the color style file for both the themes. The LSU theme also requires 
+the outer theme below as well as four logs for each of the four corners.  
+If you do not use all four logos, I don't know how it might affect the contents in the 
+header or footer. You can modify the outer theme if this causes a problem.
 
- * v1.0: Initial version defines a color scheme using LSU's purple and gold colors for any beamer theme
- * v1.1: Created two themes that use the color scheme from v1.0
- * v1.2: Modify outer theme due to change in icon sizes
+To use the theme, add the theme as you would any other Beamer theme
+
+<pre>
+  <code class="latex">
+\usetheme{LSU}
+  </code>
+</pre>
+OR
+<pre>
+  <code class="tex">
+\usetheme{BatonRouge}
+  </code>
+</pre>
+
 
 ### Download Beamer Themes
 
@@ -27,9 +43,19 @@ Beamer Theme that I created for presentations using the color schemes of Louisia
  * [LSU TeX](example/beamerthemeLSU.tex) 
  * [LSU PDF](example/beamerthemeLSU.pdf)
 
+## Changelog
+
+ * v1.0: Initial version defines a color scheme using LSU's purple and gold colors for any beamer theme
+ * v1.1: Created two themes that use the color scheme from v1.0
+ * v1.2: Modify outer theme due to change in icon sizes
+
 # LSU Powerdot
-Powerdot Theme using LSU colors created for the LaTeX presentation. (Why? because I had lot of time to 
+Powerdot Theme using LSU colors created for the LaTeX presentation. (Why? because I had some time to 
 evaluate powerdot)
+
+## Usage
+
+
  
  * [Download](powerdot-lsuloni.sty)
 
@@ -39,7 +65,7 @@ The following style files were created for personal use and are not endorsed by 
 High Performance Computing at LSU or Center for Computation & Technology. Feel free to use or modify them for 
 personal use.  
 Moving these files to github now that I am no longer at LSU and I don't know how long my CCT website will 
-be available. Feel free to modify and use for your personal use.   
+be available. 
 
 Good Luck and Go Gators!
 
