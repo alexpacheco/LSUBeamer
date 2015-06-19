@@ -20,7 +20,7 @@ personal use.
 Moving these files to github now that I am no longer at LSU and I don't know how long my CCT website will 
 be available. Feel free to modify and use for your personal use.   
 
-Good Luck and Go Gators!
+Good Luck!
 
 ## Author
 
