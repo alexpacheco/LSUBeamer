@@ -10,8 +10,8 @@ relative_permalinks: true
 title:            LSU LaTeX
 tagline:          Presentations
 description:      'Beamer theme and Powerdot style using LSU&#39;s colors'
-url:              http://www.alexpacheco.us/LSUBeamer/
-baseurl:          
+url:              http://www.alexpacheco.us/
+baseurl:          LSUBeamer/
 
 author:
   name:           'Alex Pacheco'
