@@ -1,21 +1,20 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+markdown:         kramdown
+highlighter:      rouge
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
 
 # Setup
 title:            LSU LaTeX
 tagline:          Presentations
 description:      'Beamer theme and Powerdot style using LSU&#39;s colors'
-url:              http://www.alexpacheco.us/
+url:              http://www.alexpacheco.net/
 baseurl:          LSUBeamer/
 
 author:
   name:           'Alex Pacheco'
-  url:            http://www.alexpacheco.us
+  url:            http://www.alexpacheco.net
 
 #paginate:         
 
